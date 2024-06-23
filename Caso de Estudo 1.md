@@ -75,7 +75,7 @@ os livros, e os mesmos devem ser removidos do acervo da biblioteca.
 ```sql
 DELETE FROM livros lv
 WHERE
-    lv.datapublicacao < '01.01.1900'
+    lv.datapublicacao < '01.01.1900';
 ```
 
 ### Saída no Oracle SQL Developer
@@ -108,7 +108,7 @@ FROM
 GROUP BY
     lv.genero
 ORDER BY
-    quantidade DESC
+    quantidade DESC;
 ```
 
 ### Saída no Oracle SQL Developer
@@ -116,3 +116,67 @@ ORDER BY
 #
 
 
+### Questão 5
+A biblioteca recebeu uma nova coleção de livros:
+
+Livro: Os Olhos do Dragão
+Autor: Stephen King
+Gênero: Fantasia
+Data de Publicação: 01/01/1984
+
+Livro: O Guia do Mochileiro das Galáxias
+Autor: Douglas Adams
+Gênero: Ficção Científica
+Data de Publicação: 12/10/1979
+
+Livro: A História Sem Fim
+Autor: Michael Ende
+Gênero: Fantasia
+Data de Publicação: 01/09/1979
+
+Livro: O Nome do Vento
+Autor: Patrick Rothfuss
+Gênero: Fantasia
+Data de Publicação: 27/03/2007
+
+Faça a inserção dos registros, usando os IDs 24, 25, 26 e 27 respectivamente. Atente para o fato de que os livros devem ser 
+inseridos em categorias já existentes
+
+### Resposta
+```sql
+INSERT INTO livros VALUES (
+    24,
+    'Os Olhos do Dragão',
+    'Stephen King',
+    'Fantasia',
+    '01/01/1984'
+);
+
+INSERT INTO livros VALUES (
+    25,
+    'O Guia do Mochileiro das Galáxias',
+    'Douglas Adams',
+    'Ficcao',
+    '12/10/1979'
+);
+
+INSERT INTO livros VALUES (
+    26,
+    'A História Sem Fim',
+    'Michael Ende',
+    'Fantasia',
+    '01/09/1979'
+);
+
+INSERT INTO livros VALUES (
+    27,
+    'O Nome do Vento',
+    'Patrick Rothfuss',
+    'Fantasia',
+    '27/03/2007'
+);
+```
+
+### Saída no Oracle SQL Developer
+![image](./assets/q5p1.png)
+#
