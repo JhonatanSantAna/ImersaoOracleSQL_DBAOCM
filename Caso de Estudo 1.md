@@ -89,3 +89,30 @@ Depois:
 #
 
 
+
+### Questão 4
+A biblioteca deseja saber a quantidade de livros por gênero, bem como o livro mais antigo e mais
+novo de cada um deles. Os dados devem ser retornados em uma única consulta. Retorne a coluna
+de quantidade como "Quantidade", mais antigo como "Mais Antigo" e mais novo como "Mais
+Novo".
+
+### Resposta
+```sql
+SELECT
+    lv.genero,
+    COUNT(*)               AS quantidade,
+    MIN(lv.datapublicacao) AS "Mais Antigo",
+    MAX(lv.datapublicacao) AS "Mais Novo"
+FROM
+    livros lv
+GROUP BY
+    lv.genero
+ORDER BY
+    quantidade DESC
+```
+
+### Saída no Oracle SQL Developer
+![image](./assets/q4p1.png)
+#
+
+
