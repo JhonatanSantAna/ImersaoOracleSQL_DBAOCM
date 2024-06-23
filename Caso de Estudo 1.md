@@ -16,10 +16,15 @@ mostrada como "Quantidade”.
 
 ### Resposta
 ```sql
-SELECT LV.GENERO, COUNT(*) AS QUANTIDADE 
-FROM LIVROS LV
-GROUP BY LV.GENERO
-ORDER BY 2 DESC
+SELECT
+    lv.genero,
+    COUNT(*) AS quantidade
+FROM
+    livros lv
+GROUP BY
+    lv.genero
+ORDER BY
+    2 DESC
 FETCH FIRST 5 ROWS ONLY;
 ```
 
@@ -58,3 +63,29 @@ ORDER BY
 ### Saída no Oracle SQL Developer
 ![image](./assets/q2p1.png)
 #
+
+
+
+### Questão 3
+Houve uma determinação do Governo do Estado que todos os livros publicados antes de 1900
+devem ser enviados para a capital, onde farão parte de um acervo histórico. A biblioteca enviou
+os livros, e os mesmos devem ser removidos do acervo da biblioteca.
+
+### Resposta
+```sql
+DELETE FROM livros lv
+WHERE
+    lv.datapublicacao < '01.01.1900'
+```
+
+### Saída no Oracle SQL Developer
+
+Antes:
+![image](./assets/q3p1-a.png)
+
+
+Depois:
+![image](./assets/q3p1-d.png)
+#
+
+
