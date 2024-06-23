@@ -119,24 +119,25 @@ ORDER BY
 ### Questão 5
 A biblioteca recebeu uma nova coleção de livros:
 
-Livro: Os Olhos do Dragão
-Autor: Stephen King
-Gênero: Fantasia
-Data de Publicação: 01/01/1984
+Livro: Os Olhos do Dragão \
+Autor: Stephen King \
+Gênero: Fantasia \
+Data de Publicação: 01/01/1984 
 
-Livro: O Guia do Mochileiro das Galáxias
-Autor: Douglas Adams
-Gênero: Ficção Científica
+
+Livro: O Guia do Mochileiro das Galáxias \
+Autor: Douglas Adams \
+Gênero: Ficção Científica \
 Data de Publicação: 12/10/1979
 
-Livro: A História Sem Fim
-Autor: Michael Ende
-Gênero: Fantasia
+Livro: A História Sem Fim \
+Autor: Michael Ende \
+Gênero: Fantasia \
 Data de Publicação: 01/09/1979
 
-Livro: O Nome do Vento
-Autor: Patrick Rothfuss
-Gênero: Fantasia
+Livro: O Nome do Vento \
+Autor: Patrick Rothfuss \
+Gênero: Fantasia \
 Data de Publicação: 27/03/2007
 
 Faça a inserção dos registros, usando os IDs 24, 25, 26 e 27 respectivamente. Atente para o fato de que os livros devem ser 
